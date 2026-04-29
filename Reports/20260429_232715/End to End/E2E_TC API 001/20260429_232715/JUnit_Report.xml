@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="E2E_TC API 001" time="12.837" tests="1" failures="0" errors="0">
+   <testsuite name="E2E_TC API 001" tests="1" failures="0" errors="0" time="12.837" skipped="0" timestamp="2026-04-29T16:27:23.242Z" hostname="admin - DESKTOP-6E4JM7G" id="Test Suites/End to End/E2E_TC API 001">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\admin\\git\\katalon-taskapi-UnggulAzhariRamadhan1\\Reports\\20260429_232715\\End to End\\E2E_TC API 001\\20260429_232715"/>
+         <property name="logFiles" value="C:\\Users\\admin\\git\\katalon-taskapi-UnggulAzhariRamadhan1\\Reports\\20260429_232715\\End to End\\E2E_TC API 001\\20260429_232715\\console0.log, C:\\Users\\admin\\git\\katalon-taskapi-UnggulAzhariRamadhan1\\Reports\\20260429_232715\\End to End\\E2E_TC API 001\\20260429_232715\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="unggul ramadhan"/>
+         <property name="hostName" value="admin - DESKTOP-6E4JM7G"/>
+         <property name="hostAddress" value="192.168.1.6"/>
+         <property name="projectName" value="WebAutomationTest-APITesting"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="10.4.3.0"/>
+      </properties>
+      <testcase name="Test Cases/Test Case/End to End - API Test Books" time="11.292" classname="Test Cases/Test Case/End to End - API Test Books" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) respo...":"response","(Default) statu...":"200","(Default) value...":"200","(Default) locat...":"title"}]]></property>
+         </properties>
+         <system-out><![CDATA[29-04-2026T23:27:24 - [TEST_CASE][PASSED] - Test Cases/Test Case/End to End - API Test Books: Test Cases/Test Case/End to End - API Test Books
+
+29-04-2026T23:27:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Blocks/Positive/Get Books"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator, "valueLocatorCount":valueLocatorCount], STOP_ON_FAILURE): Call Test Case 'Test Cases/Blocks/Positive/Get Books' successfully
+
+29-04-2026T23:27:26 - [TEST_CASE][PASSED] - Test Cases/Blocks/Positive/Get Books: Test Cases/Blocks/Positive/Get Books
+
+29-04-2026T23:27:26 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Books/Get Books")): Send request and verify the response successfully
+
+29-04-2026T23:27:30 - [MESSAGE][INFO] - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan1\Reports\20260429_232715\End to End\E2E_TC API 001\20260429_232715\requests\main\Get-Books_0.har
+
+29-04-2026T23:27:30 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books'
+
+29-04-2026T23:27:31 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+29-04-2026T23:27:31 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+29-04-2026T23:27:31 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+29-04-2026T23:27:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+29-04-2026T23:27:31 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-04-2026T23:27:32 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+29-04-2026T23:27:32 - [MESSAGE][PASSED] - Verify response successfully
+
+29-04-2026T23:27:32 - [MESSAGE][PASSED] - All validation steps have been passed
+
+29-04-2026T23:27:32 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+29-04-2026T23:27:32 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, statusCodeSukses): Verify response status code successfully
+
+29-04-2026T23:27:32 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-04-2026T23:27:32 - [TEST_STEP][PASSED] - verifyElementsCount(response, locator, valueLocatorCount): Verify element count successfully
+
+29-04-2026T23:27:32 - [MESSAGE][PASSED] - Verify element count successfully
+
+29-04-2026T23:27:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Blocks/Positive/Get Books' successfully
+
+29-04-2026T23:27:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Blocks/Positive/Post Books"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator], STOP_ON_FAILURE): Call Test Case 'Test Cases/Blocks/Positive/Post Books' successfully
+
+29-04-2026T23:27:32 - [TEST_CASE][PASSED] - Test Cases/Blocks/Positive/Post Books: Test Cases/Blocks/Positive/Post Books
+
+29-04-2026T23:27:33 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Books/Post Books", ["titleInput":valueLocator])): Send request and verify the response successfully
+
+29-04-2026T23:27:33 - [MESSAGE][INFO] - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan1\Reports\20260429_232715\End to End\E2E_TC API 001\20260429_232715\requests\main\Post-Books_1.har
+
+29-04-2026T23:27:33 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --request POST \
+  --data '{"id":1,"title":"Book 1","description":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","pageCount":100,"excerpt":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","publishDate":"2026-04-28T12:07:18.5407338+00:00"}' \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books'
+
+29-04-2026T23:27:33 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+29-04-2026T23:27:33 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+29-04-2026T23:27:33 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+29-04-2026T23:27:33 - [MESSAGE][PASSED] - Verify response successfully
+
+29-04-2026T23:27:33 - [MESSAGE][PASSED] - All validation steps have been passed
+
+29-04-2026T23:27:33 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+29-04-2026T23:27:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, statusCodeSukses): Verify response status code successfully
+
+29-04-2026T23:27:33 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-04-2026T23:27:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, locator, valueLocator): Verify element property value successfully
+
+29-04-2026T23:27:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+29-04-2026T23:27:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Blocks/Positive/Post Books' successfully
+
+29-04-2026T23:27:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Blocks/Positive/Get Single Book"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator], STOP_ON_FAILURE): Call Test Case 'Test Cases/Blocks/Positive/Get Single Book' successfully
+
+29-04-2026T23:27:33 - [TEST_CASE][PASSED] - Test Cases/Blocks/Positive/Get Single Book: Test Cases/Blocks/Positive/Get Single Book
+
+29-04-2026T23:27:34 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Books/Get Single Books")): Send request and verify the response successfully
+
+29-04-2026T23:27:34 - [MESSAGE][INFO] - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan1\Reports\20260429_232715\End to End\E2E_TC API 001\20260429_232715\requests\main\Get-Single-Books_2.har
+
+29-04-2026T23:27:34 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books/1'
+
+29-04-2026T23:27:34 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+29-04-2026T23:27:34 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+29-04-2026T23:27:34 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+29-04-2026T23:27:34 - [MESSAGE][PASSED] - Verify response successfully
+
+29-04-2026T23:27:34 - [MESSAGE][PASSED] - All validation steps have been passed
+
+29-04-2026T23:27:34 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+29-04-2026T23:27:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, statusCodeSukses): Verify response status code successfully
+
+29-04-2026T23:27:34 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-04-2026T23:27:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, locator, valueLocator): Verify element property value successfully
+
+29-04-2026T23:27:34 - [MESSAGE][PASSED] - Verify element property value successfully
+
+29-04-2026T23:27:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Blocks/Positive/Get Single Book' successfully
+
+29-04-2026T23:27:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Blocks/Positive/PUT Books"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator], STOP_ON_FAILURE): Call Test Case 'Test Cases/Blocks/Positive/PUT Books' successfully
+
+29-04-2026T23:27:34 - [TEST_CASE][PASSED] - Test Cases/Blocks/Positive/PUT Books: Test Cases/Blocks/Positive/PUT Books
+
+29-04-2026T23:27:34 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Books/Edit Books")): Send request and verify the response successfully
+
+29-04-2026T23:27:35 - [MESSAGE][INFO] - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan1\Reports\20260429_232715\End to End\E2E_TC API 001\20260429_232715\requests\main\Edit-Books_3.har
+
+29-04-2026T23:27:35 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --request PUT \
+  --data '{"id":1,"title":"Book 1","description":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","pageCount":100,"excerpt":"test","publishDate":"2026-04-28T12:07:18.5407338+00:00"}' \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books/1'
+
+29-04-2026T23:27:35 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+29-04-2026T23:27:35 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+29-04-2026T23:27:35 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+29-04-2026T23:27:35 - [MESSAGE][PASSED] - Verify response successfully
+
+29-04-2026T23:27:35 - [MESSAGE][PASSED] - All validation steps have been passed
+
+29-04-2026T23:27:35 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+29-04-2026T23:27:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, statusCodeSukses): Verify response status code successfully
+
+29-04-2026T23:27:35 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-04-2026T23:27:35 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, locator, valueLocator): Verify element property value successfully
+
+29-04-2026T23:27:35 - [MESSAGE][PASSED] - Verify element property value successfully
+
+29-04-2026T23:27:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Blocks/Positive/PUT Books' successfully
+
+29-04-2026T23:27:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Blocks/Positive/Delete Books"), ["response":"response", "statusCodeSukses":200, "locator":"title", "valueLocator":"Book 1"], STOP_ON_FAILURE): Call Test Case 'Test Cases/Blocks/Positive/Delete Books' successfully
+
+29-04-2026T23:27:35 - [TEST_CASE][PASSED] - Test Cases/Blocks/Positive/Delete Books: Test Cases/Blocks/Positive/Delete Books
+
+29-04-2026T23:27:35 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Books/Delete Books")): Send request and verify the response successfully
+
+29-04-2026T23:27:35 - [MESSAGE][INFO] - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan1\Reports\20260429_232715\End to End\E2E_TC API 001\20260429_232715\requests\main\Delete-Books_4.har
+
+29-04-2026T23:27:35 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --request DELETE \
+  --data '{"id":1,"title":"Book 1","description":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","pageCount":100,"excerpt":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","publishDate":"2026-04-28T12:07:18.5407338+00:00"}' \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books/1'
+
+29-04-2026T23:27:36 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+29-04-2026T23:27:36 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+29-04-2026T23:27:36 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+29-04-2026T23:27:36 - [MESSAGE][PASSED] - Verify response successfully
+
+29-04-2026T23:27:36 - [MESSAGE][PASSED] - All validation steps have been passed
+
+29-04-2026T23:27:36 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+29-04-2026T23:27:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, statusCodeSukses): Verify response status code successfully
+
+29-04-2026T23:27:36 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-04-2026T23:27:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Blocks/Positive/Delete Books' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[29-04-2026T23:27:23 - [TEST_SUITE][PASSED] - E2E_TC API 001: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

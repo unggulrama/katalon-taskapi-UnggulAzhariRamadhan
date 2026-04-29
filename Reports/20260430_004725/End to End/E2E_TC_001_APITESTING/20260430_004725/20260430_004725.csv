@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+E2E_TC_001_APITESTING,,,,30-04-2026 00:47:32,30-04-2026 00:47:44,12.438s,PASSED
+,,,,,,,
+Test Cases/Test Case/E2E_API_Books,,,,30-04-2026 00:47:33,30-04-2026 00:47:44,10.971s,PASSED
+"DATA BINDING - {""(Default) respo..."":""response"",""(Default) statu..."":""200"",""(Default) value..."":""200"",""(Default) locat..."":""title""}",,,,,,,
+"callTestCase(findTestCase(""Blocks/Positive/Get Books""), [""response"":response, ""statusCodeSukses"":statusCodeSukses, ""locator"":locator, ""valueLocator"":valueLocator, ""valueLocatorCount"":valueLocatorCount], STOP_ON_FAILURE)",,,,30-04-2026 00:47:34,30-04-2026 00:47:41,6.922s,PASSED
+"callTestCase(findTestCase(""Blocks/Positive/Post Books""), [""response"":response, ""statusCodeSukses"":statusCodeSukses, ""locator"":locator, ""valueLocator"":valueLocator], STOP_ON_FAILURE)",,,,30-04-2026 00:47:41,30-04-2026 00:47:42,0.849s,PASSED
+"callTestCase(findTestCase(""Blocks/Positive/Get Single Book""), [""response"":response, ""statusCodeSukses"":statusCodeSukses, ""locator"":locator, ""valueLocator"":valueLocator], STOP_ON_FAILURE)",,,,30-04-2026 00:47:42,30-04-2026 00:47:43,0.748s,PASSED
+"callTestCase(findTestCase(""Blocks/Positive/PUT Books""), [""response"":response, ""statusCodeSukses"":statusCodeSukses, ""locator"":locator, ""valueLocator"":valueLocator], STOP_ON_FAILURE)",,,,30-04-2026 00:47:43,30-04-2026 00:47:43,0.604s,PASSED
+"callTestCase(findTestCase(""Blocks/Positive/Delete Books""), [""response"":""response"", ""statusCodeSukses"":200, ""locator"":""title"", ""valueLocator"":""Book 1""], STOP_ON_FAILURE)",,,,30-04-2026 00:47:43,30-04-2026 00:47:44,0.552s,PASSED

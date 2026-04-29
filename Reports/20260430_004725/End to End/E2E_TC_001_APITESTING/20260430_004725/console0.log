@@ -1,0 +1,143 @@
+2026-04-30 00:47:31.236 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\admin\.katalon\packages\KSE-10.4.3\configuration\org.eclipse.osgi\133\0\.cp\resources\logback\logback-execution.xml
+2026-04-30 00:47:31.244 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan2\Include\config\log.properties
+2026-04-30 00:47:31.988 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/End to End/E2E_TC_001_APITESTING
+2026-04-30 00:47:32.169 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = unggul ramadhan
+2026-04-30 00:47:32.305 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = katalon-taskapi-UnggulAzhariRamadhan
+2026-04-30 00:47:32.323 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = admin - DESKTOP-6E4JM7G
+2026-04-30 00:47:32.342 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 10 64bit
+2026-04-30 00:47:32.362 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.1.6
+2026-04-30 00:47:32.369 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.3.0
+2026-04-30 00:47:33.475 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:33.475 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Test Case/E2E_API_Books
+2026-04-30 00:47:33.689 INFO  c.k.katalon.core.main.TestCaseExecutor   - (Default) response = response
+2026-04-30 00:47:33.776 INFO  c.k.katalon.core.main.TestCaseExecutor   - (Default) statusCodeSukses = 200
+2026-04-30 00:47:33.810 INFO  c.k.katalon.core.main.TestCaseExecutor   - (Default) locator = title
+2026-04-30 00:47:33.856 INFO  c.k.katalon.core.main.TestCaseExecutor   - (Default) valueLocator = Book 1
+2026-04-30 00:47:33.859 INFO  c.k.katalon.core.main.TestCaseExecutor   - (Default) valueLocatorCount = 200
+2026-04-30 00:47:34.761 DEBUG testcase.E2E_API_Books                   - 1: callTestCase(findTestCase("Blocks/Positive/Get Books"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator, "valueLocatorCount":valueLocatorCount], STOP_ON_FAILURE)
+2026-04-30 00:47:35.087 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:35.089 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Blocks/Positive/Get Books
+2026-04-30 00:47:35.135 INFO  c.k.katalon.core.main.TestCaseExecutor   - response = response
+2026-04-30 00:47:35.138 INFO  c.k.katalon.core.main.TestCaseExecutor   - statusCodeSukses = 200
+2026-04-30 00:47:35.158 INFO  c.k.katalon.core.main.TestCaseExecutor   - locator = title
+2026-04-30 00:47:35.160 INFO  c.k.katalon.core.main.TestCaseExecutor   - valueLocator = Book 1
+2026-04-30 00:47:35.161 INFO  c.k.katalon.core.main.TestCaseExecutor   - valueLocatorCount = 200
+2026-04-30 00:47:35.319 DEBUG testcase.Get Books                       - 1: response = sendRequestAndVerify(findTestObject("Books/Get Books"))
+2026-04-30 00:47:39.486 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan2\Reports\20260430_004725\End to End\E2E_TC_001_APITESTING\20260430_004725\requests\main\Get-Books_0.har
+2026-04-30 00:47:39.493 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books'
+2026-04-30 00:47:39.825 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2026-04-30 00:47:39.825 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2026-04-30 00:47:40.744 DEBUG testcase.Get Books                       - 1: request = getInstance().getCurrentRequest()
+2026-04-30 00:47:40.761 DEBUG testcase.Get Books                       - 2: response = getInstance().getCurrentResponse()
+2026-04-30 00:47:40.775 DEBUG testcase.Get Books                       - 3: verifyResponseStatusCode(response, 200)
+2026-04-30 00:47:40.871 DEBUG testcase.Get Books                       - 4: getStatusCode()).isEqualTo(200)
+2026-04-30 00:47:41.230 INFO  c.k.k.core.main.WSVerificationExecutor   - END Verification
+2026-04-30 00:47:41.376 DEBUG testcase.Get Books                       - 2: verifyResponseStatusCode(response, statusCodeSukses)
+2026-04-30 00:47:41.481 DEBUG testcase.Get Books                       - 3: verifyElementsCount(response, locator, valueLocatorCount)
+2026-04-30 00:47:41.671 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Blocks/Positive/Get Books
+2026-04-30 00:47:41.671 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:41.682 DEBUG testcase.E2E_API_Books                   - 2: callTestCase(findTestCase("Blocks/Positive/Post Books"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator], STOP_ON_FAILURE)
+2026-04-30 00:47:41.756 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:41.756 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Blocks/Positive/Post Books
+2026-04-30 00:47:41.789 INFO  c.k.katalon.core.main.TestCaseExecutor   - response = response
+2026-04-30 00:47:41.802 INFO  c.k.katalon.core.main.TestCaseExecutor   - statusCodeSukses = 200
+2026-04-30 00:47:41.805 INFO  c.k.katalon.core.main.TestCaseExecutor   - locator = title
+2026-04-30 00:47:41.808 INFO  c.k.katalon.core.main.TestCaseExecutor   - valueLocator = Book 1
+2026-04-30 00:47:41.974 DEBUG testcase.Post Books                      - 1: response = sendRequestAndVerify(findTestObject("Books/Post Books", ["titleInput":valueLocator]))
+2026-04-30 00:47:42.263 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan2\Reports\20260430_004725\End to End\E2E_TC_001_APITESTING\20260430_004725\requests\main\Post-Books_1.har
+2026-04-30 00:47:42.277 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --request POST \
+  --data '{"id":1,"title":"Book 1","description":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","pageCount":100,"excerpt":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","publishDate":"2026-04-28T12:07:18.5407338+00:00"}' \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books'
+2026-04-30 00:47:42.343 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2026-04-30 00:47:42.343 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2026-04-30 00:47:42.425 DEBUG testcase.Post Books                      - 1: request = getInstance().getCurrentRequest()
+2026-04-30 00:47:42.431 DEBUG testcase.Post Books                      - 2: response = getInstance().getCurrentResponse()
+2026-04-30 00:47:42.437 INFO  c.k.k.core.main.WSVerificationExecutor   - END Verification
+2026-04-30 00:47:42.443 DEBUG testcase.Post Books                      - 2: verifyResponseStatusCode(response, statusCodeSukses)
+2026-04-30 00:47:42.459 DEBUG testcase.Post Books                      - 3: verifyElementPropertyValue(response, locator, valueLocator)
+2026-04-30 00:47:42.527 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Blocks/Positive/Post Books
+2026-04-30 00:47:42.527 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:42.533 DEBUG testcase.E2E_API_Books                   - 3: callTestCase(findTestCase("Blocks/Positive/Get Single Book"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator], STOP_ON_FAILURE)
+2026-04-30 00:47:42.610 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:42.610 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Blocks/Positive/Get Single Book
+2026-04-30 00:47:42.661 INFO  c.k.katalon.core.main.TestCaseExecutor   - response = response
+2026-04-30 00:47:42.670 INFO  c.k.katalon.core.main.TestCaseExecutor   - statusCodeSukses = 200
+2026-04-30 00:47:42.680 INFO  c.k.katalon.core.main.TestCaseExecutor   - locator = title
+2026-04-30 00:47:42.684 INFO  c.k.katalon.core.main.TestCaseExecutor   - valueLocator = Book 1
+2026-04-30 00:47:42.860 DEBUG testcase.Get Single Book                 - 1: response = sendRequestAndVerify(findTestObject("Books/Get Single Books"))
+2026-04-30 00:47:43.131 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan2\Reports\20260430_004725\End to End\E2E_TC_001_APITESTING\20260430_004725\requests\main\Get-Single-Books_2.har
+2026-04-30 00:47:43.133 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books/1'
+2026-04-30 00:47:43.200 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2026-04-30 00:47:43.200 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2026-04-30 00:47:43.201 DEBUG testcase.Post Books                      - 1: request = getInstance().getCurrentRequest()
+2026-04-30 00:47:43.203 DEBUG testcase.Post Books                      - 2: response = getInstance().getCurrentResponse()
+2026-04-30 00:47:43.206 INFO  c.k.k.core.main.WSVerificationExecutor   - END Verification
+2026-04-30 00:47:43.210 DEBUG testcase.Get Single Book                 - 2: verifyResponseStatusCode(response, statusCodeSukses)
+2026-04-30 00:47:43.222 DEBUG testcase.Get Single Book                 - 3: verifyElementPropertyValue(response, locator, valueLocator)
+2026-04-30 00:47:43.276 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Blocks/Positive/Get Single Book
+2026-04-30 00:47:43.276 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:43.283 DEBUG testcase.E2E_API_Books                   - 4: callTestCase(findTestCase("Blocks/Positive/PUT Books"), ["response":response, "statusCodeSukses":statusCodeSukses, "locator":locator, "valueLocator":valueLocator], STOP_ON_FAILURE)
+2026-04-30 00:47:43.360 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:43.360 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Blocks/Positive/PUT Books
+2026-04-30 00:47:43.383 INFO  c.k.katalon.core.main.TestCaseExecutor   - response = response
+2026-04-30 00:47:43.384 INFO  c.k.katalon.core.main.TestCaseExecutor   - statusCodeSukses = 200
+2026-04-30 00:47:43.385 INFO  c.k.katalon.core.main.TestCaseExecutor   - locator = title
+2026-04-30 00:47:43.388 INFO  c.k.katalon.core.main.TestCaseExecutor   - valueLocator = Book 1
+2026-04-30 00:47:43.502 DEBUG testcase.PUT Books                       - 1: response = sendRequestAndVerify(findTestObject("Books/Edit Books"))
+2026-04-30 00:47:43.736 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan2\Reports\20260430_004725\End to End\E2E_TC_001_APITESTING\20260430_004725\requests\main\Edit-Books_3.har
+2026-04-30 00:47:43.738 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --request PUT \
+  --data '{"id":1,"title":"Book 1","description":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","pageCount":100,"excerpt":"test","publishDate":"2026-04-28T12:07:18.5407338+00:00"}' \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books/1'
+2026-04-30 00:47:43.796 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2026-04-30 00:47:43.797 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2026-04-30 00:47:43.799 DEBUG testcase.Post Books                      - 1: request = getInstance().getCurrentRequest()
+2026-04-30 00:47:43.800 DEBUG testcase.Post Books                      - 2: response = getInstance().getCurrentResponse()
+2026-04-30 00:47:43.801 INFO  c.k.k.core.main.WSVerificationExecutor   - END Verification
+2026-04-30 00:47:43.806 DEBUG testcase.PUT Books                       - 2: verifyResponseStatusCode(response, statusCodeSukses)
+2026-04-30 00:47:43.826 DEBUG testcase.PUT Books                       - 3: verifyElementPropertyValue(response, locator, valueLocator)
+2026-04-30 00:47:43.886 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Blocks/Positive/PUT Books
+2026-04-30 00:47:43.886 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:43.888 DEBUG testcase.E2E_API_Books                   - 5: callTestCase(findTestCase("Blocks/Positive/Delete Books"), ["response":"response", "statusCodeSukses":200, "locator":"title", "valueLocator":"Book 1"], STOP_ON_FAILURE)
+2026-04-30 00:47:43.968 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:43.968 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Blocks/Positive/Delete Books
+2026-04-30 00:47:43.987 INFO  c.k.katalon.core.main.TestCaseExecutor   - response = response
+2026-04-30 00:47:43.989 INFO  c.k.katalon.core.main.TestCaseExecutor   - statusCodeSukses = 200
+2026-04-30 00:47:43.990 INFO  c.k.katalon.core.main.TestCaseExecutor   - locator = title
+2026-04-30 00:47:43.991 INFO  c.k.katalon.core.main.TestCaseExecutor   - valueLocator = Book 1
+2026-04-30 00:47:44.102 DEBUG testcase.Delete Books                    - 1: response = sendRequestAndVerify(findTestObject("Books/Delete Books"))
+2026-04-30 00:47:44.346 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\admin\git\katalon-taskapi-UnggulAzhariRamadhan2\Reports\20260430_004725\End to End\E2E_TC_001_APITESTING\20260430_004725\requests\main\Delete-Books_4.har
+2026-04-30 00:47:44.348 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --request DELETE \
+  --data '{"id":1,"title":"Book 1","description":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","pageCount":100,"excerpt":"Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n","publishDate":"2026-04-28T12:07:18.5407338+00:00"}' \
+  --header 'Content-Type: application/json' \
+  'https://fakerestapi.azurewebsites.net/api/v1/Books/1'
+2026-04-30 00:47:44.404 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2026-04-30 00:47:44.404 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2026-04-30 00:47:44.405 DEBUG testcase.Post Books                      - 1: request = getInstance().getCurrentRequest()
+2026-04-30 00:47:44.407 DEBUG testcase.Post Books                      - 2: response = getInstance().getCurrentResponse()
+2026-04-30 00:47:44.417 INFO  c.k.k.core.main.WSVerificationExecutor   - END Verification
+2026-04-30 00:47:44.425 DEBUG testcase.Delete Books                    - 2: verifyResponseStatusCode(response, statusCodeSukses)
+2026-04-30 00:47:44.440 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Blocks/Positive/Delete Books
+2026-04-30 00:47:44.441 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-04-30 00:47:44.447 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Test Case/E2E_API_Books
+2026-04-30 00:47:44.572 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-04-30 00:47:44.572 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/End to End/E2E_TC_001_APITESTING
+2026-04-30 00:47:44.572 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
